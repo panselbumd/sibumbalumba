@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Palet: Biru Air (water blue) + Orange — dipilih agar selaras dengan
+ * citra Kota Batu (pegunungan, wahana air) sekaligus tetap terasa
+ * institusional/pemerintahan, bukan playful/konsumen.
+ */
+:root {
+  --color-primary: #0284c7;       /* biru air (sky-600) — aksi utama, nav aktif */
+  --color-primary-dark: #0369a1;  /* untuk hover/gradient */
+  --color-accent: #ea580c;        /* orange (orange-600) — highlight sekunder, CTA kedua */
+  --color-accent-light: #fb923c;
+  --color-danger: #b91c1c;
+  --color-warning: #b45309;
+  --color-surface: #ffffff;
+  --color-surface-2: #f8fafc;
+  --color-border: #e5e7eb;
+}
+
+.dark {
+  --color-primary: #38bdf8;       /* biru air lebih terang untuk dark mode */
+  --color-primary-dark: #0ea5e9;
+  --color-accent: #fb923c;
+  --color-accent-light: #fdba74;
+  --color-danger: #f87171;
+  --color-warning: #fbbf24;
+  --color-surface: #0a0a0b;
+  --color-surface-2: #18181b;
+  --color-border: #27272a;
+}
+
+html {
+  color-scheme: light;
+}
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--color-surface);
+  color: #1f2937;
+}
+.dark body {
+  color: #e5e7eb;
+}
